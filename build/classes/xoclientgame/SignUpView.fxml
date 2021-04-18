@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #57D1C9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xoclientgame.SignUpViewController">
+   <children>
+      <ImageView fitHeight="511.0" fitWidth="750.0" focusTraversable="true" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/main.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_nameS" layoutX="284.0" layoutY="212.0" opacity="0.48" prefHeight="31.0" prefWidth="241.0" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_sign" defaultButton="true" layoutX="284.0" layoutY="373.0" mnemonicParsing="false" onAction="#signUP" prefHeight="45.0" prefWidth="249.0" style="-fx-background-color: #38c450; -fx-background-radius: 50;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Hyperlink fx:id="link_login" layoutX="654.0" layoutY="26.0" onAction="#loginLink" prefHeight="40.0" prefWidth="94.0" text="Login" textFill="#09644f" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font></Hyperlink>
+      <Label layoutX="86.0" layoutY="210.0" text="User Name" textFill="#09644f">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="284.0" text="Password" textFill="#09644f">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txt_passS" layoutX="288.0" layoutY="289.0" opacity="0.48" prefHeight="31.0" prefWidth="241.0" style="-fx-background-radius: 50;" />
+      <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="433.0" layoutX="183.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/two.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: #57D1C9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xoclientgame.LoginViewController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="750.0" focusTraversable="true" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/main.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_name" layoutX="265.0" layoutY="226.0" opacity="0.48" prefHeight="38.0" prefWidth="260.0" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_login" defaultButton="true" layoutX="271.0" layoutY="415.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="249.0" style="-fx-background-color: #38c450; -fx-background-radius: 100;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="76.0" layoutY="225.0" text="User name" textFill="#09644f">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="314.0" prefHeight="40.0" prefWidth="147.0" text=" Password" textFill="#09644f">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="link_signUp" layoutX="638.0" layoutY="29.0" onAction="#signUPLink" text="SignUp" textFill="#09644f" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="link_pass" layoutX="302.0" layoutY="479.0" onAction="#forgetPass" text="Forget password" textFill="#09644f" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Hyperlink>
+      <PasswordField fx:id="txt_pass" layoutX="265.0" layoutY="315.0" opacity="0.48" prefHeight="38.0" prefWidth="260.0" style="-fx-background-radius: 50;" />
+      <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="433.0" layoutX="183.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/two.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
